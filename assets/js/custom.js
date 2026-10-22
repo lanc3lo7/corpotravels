@@ -143,15 +143,55 @@ $('.logoipsum-slider').slick({
 // ============= about validation start ============= //
 const aboutForm = document.getElementById('about-form');
 const aboutMessage = document.getElementById('about-message');
+// Numero de WhatsApp de Corpotravels (+58 412 557-7363)
+const CORPOTRAVELS_WHATSAPP = '584125577363';
+
 if (aboutForm !== null) {
     aboutForm.addEventListener('submit', function(event) {
         event.preventDefault();
-        aboutMessage.innerHTML = 'Form submitted successfully!';
-        aboutMessage.style.display = 'block';
+
+        const nameField = aboutForm.querySelector('input[type="text"]');
+        const dateField = aboutForm.querySelector('input[type="date"]');
+        const destField = aboutForm.querySelector('select');
+
+        const nombre = nameField ? nameField.value.trim() : '';
+
+        let destino = '';
+        if (destField && destField.selectedIndex > 0) {
+            destino = destField.options[destField.selectedIndex].text.trim();
+        }
+
+        let fecha = dateField ? dateField.value.trim() : '';
+        if (/^\d{4}-\d{2}-\d{2}$/.test(fecha)) {
+            const p = fecha.split('-');
+            fecha = p[2] + '/' + p[1] + '/' + p[0];
+        }
+
+        const lineas = ['Hola Corpotravels, quiero hacer una reserva:'];
+        if (nombre) lineas.push('Nombre: ' + nombre);
+        if (destino) lineas.push('Destino: ' + destino);
+        if (fecha) lineas.push('Fecha de viaje: ' + fecha);
+        lineas.push('', 'Quiero mas informacion, gracias.');
+
+        const url = 'https://wa.me/' + CORPOTRAVELS_WHATSAPP +
+            '?text=' + encodeURIComponent(lineas.join('\n'));
+
+        // Mensaje de confirmacion en el propio formulario
+        if (aboutMessage) {
+            aboutMessage.innerHTML = 'Abriendo WhatsApp...';
+            aboutMessage.style.display = 'block';
+        }
+
+        // Pestaña nueva; si el navegador la bloquea, navega en la misma
+        const opened = window.open(url, '_blank', 'noopener');
+        if (!opened) {
+            window.location.href = url;
+        }
+
         aboutForm.reset();
         setTimeout(function() {
-            aboutMessage.style.display = 'none';
-        }, 3000);
+            if (aboutMessage) aboutMessage.style.display = 'none';
+        }, 4000);
     });
 }
 // ============= about validation end ============= //

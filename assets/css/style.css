@@ -2526,3 +2526,17 @@ textarea {
 }
 
 /* ====== 10.1. Coming Soon/404 section ====== */
+/* ====== Smooth scroll hacia el formulario de reserva ====== */
+html {
+    scroll-behavior: smooth;
+}
+
+#about-form {
+    scroll-margin-top: 30px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
