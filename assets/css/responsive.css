@@ -652,7 +652,8 @@
     }
 
     .sub-footer img {
-        width: 180px;
+        height: 40px;
+        width: auto;
     }
 
     .address div {
@@ -1392,7 +1393,8 @@
     }
 
     .sub-footer img {
-        width: 190px;
+        height: 40px;
+        width: auto;
     }
 
     .sub-footer p {
@@ -1422,7 +1424,8 @@
 
     /* ======== index.html ======== */
     .navbar-brand img {
-        width: 164px;
+        height: 38px;
+        width: auto;
     }
 
     #hero {

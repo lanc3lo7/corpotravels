@@ -609,7 +609,8 @@ header {
 }
 
 .navbar-brand img {
-    width: 200px;
+    height: 48px;
+    width: auto;
 }
 
 header nav a {
@@ -723,7 +724,8 @@ aside {
 }
 
 .sidebar img {
-    width: 170px;
+    height: 42px;
+    width: auto;
 }
 
 .sidebar button {
@@ -2059,7 +2061,8 @@ footer hr {
 }
 
 .sub-footer img {
-    width: 210px;
+    height: 48px;
+    width: auto;
 }
 
 .sub-footer a {
