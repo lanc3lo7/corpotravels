@@ -13,7 +13,6 @@ Sitio web estático para Corpotravels (agencias de viajes corporativos).
 ├── team.html             Equipo
 ├── testimonials.html     Testimonios
 ├── faq.html              Preguntas frecuentes
-├── blog.html             Blog
 ├── contact.html          Contacto
 ├── comingsoon.html       Próximamente
 ├── 404.html              Página de error

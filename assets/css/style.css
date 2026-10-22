@@ -35,7 +35,7 @@ License URI:
             1.12 testimonials section
             1.13 logoipsum section
             1.14 start planning section
-            1.15 blog section
+            1.15 paquetes nacionales section
             1.16 newsletter section
             1.17 footer section
     02. About Page Style
@@ -44,7 +44,7 @@ License URI:
     03. Our Services Page Style
         section hero Page
             3.1 hero section
-    04. Blogs Page Style
+    04. (pagina de blog eliminada)
         section hero Page
             4.1 hero section
     05. Destinations Page Style
@@ -1849,87 +1849,87 @@ img[alt="ser-Camera"]:hover {
 
 /* ====== End 1.14 start planning section ====== */
 
-/* ====== 1.15 blog section ====== */
-#blog {
+/* ====== 1.15 paquetes nacionales section ====== */
+#paquetes {
     padding: 100px 0 90px 0;
     background-color: #FFFFFF;
 }
 
-#blog h4 {
+#paquetes h4 {
     color: #FB8E26;
     padding-bottom: 15px;
     text-align: center;
 }
 
-#blog h2 {
+#paquetes h2 {
     color: #262626;
     text-align: center;
     padding: 0 160px;
 }
 
-#blog p {
+#paquetes p {
     color: #9B9B9B;
 }
 
-.blogCards img {
+.paquetesCards img {
     width: 100%;
     transition: 0.5s ease;
 }
 
-.blogCards .col-md-4:hover img {
+.paquetesCards .col-md-4:hover img {
     transform: scale(0.9);
 }
 
-.blogCards .row {
+.paquetesCards .row {
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
 
-.blogCards .col-md-4 {
+.paquetesCards .col-md-4 {
     padding: 0 !important;
     padding-bottom: 15px !important;
 }
 
-.blogCards h6 {
+.paquetesCards h6 {
     padding: 6px 5px 0 0 !important;
 }
 
-.blogCards p {
+.paquetesCards p {
     padding: 15px 5px 13px 0;
 }
 
-.blogCategory {
+.paqueteCategory {
     padding: 21px 5px 0 0 !important;
     color: #FB8E26 !important;
     transition: 0.3s ease-in-out;
 }
 
-.blogCategory:hover {
+.paqueteCategory:hover {
     color: #021F41 !important;
 }
 
-.blogCards a {
+.paquetesCards a {
     color: #021F41;
     padding: 0 !important;
 }
 
 
-.blogCards a:hover {
+.paquetesCards a:hover {
     color: #FB8E26;
 }
 
-.blogCards i {
+.paquetesCards i {
     color: #021F41;
     transition: 0.3s ease-in-out;
     margin-left: 4px;
 }
 
-.blogCards a:hover i {
+.paquetesCards a:hover i {
     transform: translateX(7px);
     color: #FB8E26;
 }
 
-/* ====== End 1.15 blog section ====== */
+/* ====== End 1.15 paquetes nacionales section ====== */
 
 /* ====== 1.16 newsletter section ====== */
 #newsletter {
@@ -2161,33 +2161,6 @@ footer hr {
 }
 
 /* ====== End 3.1 hero section ====== */
-
-/* ====== 4.1 hero section ====== */
-.header-blog {
-    position: relative;
-}
-
-.header-blog::before {
-    content: "";
-    background: url('../images/blog/blog-hero-img.webp') no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-}
-
-.header-blog::after {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
 /* ====== End 4.1 hero section ====== */
 
