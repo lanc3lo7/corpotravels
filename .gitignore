@@ -1,0 +1,25 @@
+# Dependencias
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Sistema operativo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Temporales
+*.log
+*.tmp
+
+# Entorno
+.env
+.env.local
+
+# Documentos de trabajo (no forman parte del sitio)
+*.pdf
