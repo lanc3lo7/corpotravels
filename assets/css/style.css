@@ -2036,8 +2036,11 @@ footer h4 {
 }
 
 /* El correo es una sola palabra sin espacios: si no cabe, se rompe
-   en vez de desbordar fuera de la columna */
+   en vez de desbordar fuera de la columna.
+   padding: 0 porque la regla global de `a` le pone 19px 32px y eso
+   dibujaba una caja alrededor del enlace (parecia un contenedor). */
 .address a {
+    padding: 0 !important;
     overflow-wrap: anywhere;
     word-break: break-word;
 }
