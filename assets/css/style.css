@@ -2030,6 +2030,18 @@ footer h4 {
     transition: 0.3s ease;
 }
 
+/* El telefono nunca debe partirse en dos lineas */
+.address p.phone {
+    white-space: nowrap;
+}
+
+/* El correo es una sola palabra sin espacios: si no cabe, se rompe
+   en vez de desbordar fuera de la columna */
+.address a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
 .address p:hover {
     color: #FB8E26;
 }
