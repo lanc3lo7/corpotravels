@@ -1296,7 +1296,9 @@ input[type="date"] {
 
 .chooseBg::after {
     content: "";
-    background-color: rgba(0, 0, 0, 0.4);
+    /* 0.55 en vez del 0.4 del template: la foto de playa es muy clara y
+       con 0.4 el texto blanco quedaba en 2.98:1 (WCAG AA exige 4.5:1) */
+    background-color: rgba(0, 0, 0, 0.55);
     width: 100%;
     height: 100%;
     position: absolute;
