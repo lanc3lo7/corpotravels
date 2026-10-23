@@ -197,22 +197,6 @@ if (aboutForm !== null) {
 // ============= about validation end ============= //
 
 
-// ============= newsletter validation start start ============= //
-const form = document.getElementById('newsletter-form');
-const successMessage = document.getElementById('newsletter-message');
-if (form !== null) {
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        successMessage.innerHTML = 'Form submitted successfully!';
-        successMessage.style.display = 'block';
-        form.reset();
-        setTimeout(function() {
-            successMessage.style.display = 'none';
-        }, 3000);
-    });
-}
-// ============= newsletter validation start end ============= //
-
 // ============= contact form validation start ============= //
 const contactForm = document.getElementById('contact-form');
 const contactMessage = document.getElementById('contact-message');
