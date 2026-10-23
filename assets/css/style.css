@@ -2048,6 +2048,11 @@ footer h4 {
 
 .address i {
     color: #FB8E26;
+    /* ancho fijo: cada icono de Font Awesome tiene un ancho propio y
+       desalineaba el texto de las tres filas entre si */
+    width: 22px;
+    text-align: center;
+    flex-shrink: 0;
 }
 
 .address div {
