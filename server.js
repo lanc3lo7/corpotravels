@@ -4,7 +4,9 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = 'C:\\Users\\Athena\\Desktop\\webs\\corpotravels';
-const PORT = Number(process.argv[2] || 8080);
+// Puerto por defecto 8090: el 8080 lo usa el proyecto shinsei (Vite dev server).
+// Se puede sobreescribir: node server.js <puerto>
+const PORT = Number(process.argv[2] || 8090);
 const HOST = '127.0.0.1';
 
 const MIME = {

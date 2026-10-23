@@ -29,10 +29,13 @@ Sitio web estático para Corpotravels (agencias de viajes corporativos).
 Requiere Node.js. No tiene dependencias, así que no hace falta `npm install`.
 
 ```powershell
-& 'C:\Program Files\nodejs\node.exe' server.js 8080
+& 'C:\Program Files\nodejs\node.exe' server.js
 ```
 
-Luego abre <http://127.0.0.1:8080/>.
+Luego abre <http://127.0.0.1:8090/>.
+
+> El puerto por defecto es **8090** porque el 8080 lo ocupa el proyecto `shinsei`
+> (Vite dev server). Se puede sobreescribir: `node server.js <puerto>`.
 
 El servidor sirve la raíz del proyecto, resuelve `/` hacia `index.html`, aplica los
 `Content-Type` correctos y devuelve `404.html` para rutas inexistentes.
