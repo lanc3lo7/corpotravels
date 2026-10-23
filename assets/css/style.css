@@ -1163,6 +1163,17 @@ input[type="date"] {
     margin-top: 50px;
 }
 
+/* Tras quitar el texto del descuento solo queda el boton dentro del
+   overlay: sin el titulo que ocupaba la parte superior hay que
+   recentrarlo, porque top: 44% estaba calculado para titulo + boton. */
+#special .overlay_text {
+    top: 50%;
+}
+
+#special .overlay_text a {
+    margin-top: 0;
+}
+
 .special {
     background-color: transparent !important;
     padding: 0 0 50px 0 !important;
