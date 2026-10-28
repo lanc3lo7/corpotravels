@@ -262,9 +262,9 @@
 
     /* global style */
     h1 {
-        font-size: 80px;
+        font-size: 72px;
         font-weight: 600;
-        line-height: 86px;
+        line-height: 77.4px;
     }
 
     h2 {
@@ -340,7 +340,7 @@
     }
 
     #hero h1:first-child {
-        font-size: 100px;
+        font-size: 90px;
     }
 
     #features {
@@ -1114,9 +1114,9 @@
 
     /* global style */
     h1 {
-        font-size: 54px;
+        font-size: 48.6px;
         font-weight: 600;
-        line-height: 60px;
+        line-height: 54px;
     }
 
     h2 {
@@ -1204,7 +1204,7 @@
     }
 
     #hero h1:first-child {
-        font-size: 70px;
+        font-size: 63px;
     }
 
     #features p {
@@ -1434,7 +1434,7 @@
     }
 
     #hero h1:first-child {
-        font-size: 68px;
+        font-size: 61.2px;
     }
 
     #hero p {

@@ -225,9 +225,9 @@ iframe {
 /* ===== 02. Global Style ===== */
 
 h1 {
-    font-size: 110px;
+    font-size: 99px;
     font-weight: 700;
-    line-height: 116px;
+    line-height: 104.4px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -856,7 +856,7 @@ aside {
 
 #hero h1:first-child {
     color: #FFFFFF;
-    font-size: 150px;
+    font-size: 135px;
 }
 
 h1 {
