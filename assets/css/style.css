@@ -857,6 +857,12 @@ aside {
 #hero h1:first-child {
     color: #FFFFFF;
     font-size: 135px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+#hero h1 {
+    display: inline-block;
 }
 
 h1 {
