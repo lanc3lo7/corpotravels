@@ -1217,10 +1217,18 @@ input[type="date"] {
     width: 70%;
 }
 
+.tourCards figure {
+    overflow: hidden;
+    height: 280px;
+    margin: 0;
+    width: 100%;
+}
+
 .tourCards img {
     width: 100%;
-    height: 280px;
+    height: 100%;
     object-fit: cover;
+    display: block;
     transition: 0.3s ease;
 }
 
@@ -1239,7 +1247,6 @@ input[type="date"] {
     padding: 0 !important;
     padding-bottom: 30px !important;
     box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.10), 0px 6px 14px -6px rgba(24, 39, 75, 0.12);
-    overflow: hidden;
 }
 
 .tourCards h6 {
