@@ -58,7 +58,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, {
       'Content-Type': MIME[ext] || 'application/octet-stream',
       'Content-Length': stat.size,
-      'Cache-Control': 'no-cache'
+      'Cache-Control': 'no-store'
     });
     fs.createReadStream(filePath).pipe(res);
   });
