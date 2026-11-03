@@ -527,27 +527,30 @@ input:active {
 
 /* === End of animation image === */
 
-/* === button back to top ====*/
-#backToTopBtn {
-    display: none;
+/* === boton flotante de WhatsApp ====*/
+#whatsappBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 99;
     border: none;
-    padding: 17px 20px;
+    padding: 15px 18px !important;
     border-radius: 10px;
     transition: all 0.3s ease;
-    background-color: #FB8E26;
+    background-color: #25D366;
     color: #FFFFFF;
+    font-size: 26px;
 }
 
-#backToTopBtn:hover {
-    background-color: #021F41;
+#whatsappBtn:hover {
+    background-color: #128C7E;
     color: #ffffff;
 }
 
-/* === Enf of button back to top ====*/
+/* === End of boton flotante de WhatsApp ====*/
 
 /* =====  End of 02. Global style  ===== */
 
@@ -1646,6 +1649,16 @@ img[alt="ser-Camera"]:hover {
     background-color: transparent !important;
 }
 
+#team a.teamContact {
+    display: block;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+#team a.teamContact:hover p {
+    text-decoration: underline;
+}
+
 .overlay_text i {
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
@@ -2585,6 +2598,5 @@ html {
     html {
         scroll-behavior: auto;
     }
-} 
-  
- 
+}
+

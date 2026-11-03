@@ -79,26 +79,7 @@ jQuery(document).ready(function($) {
 });
 // ============= counter end ============= //
 
-// ============= button back to top start ============= //
-window.onscroll = function() {
-    scrollFunction();
-};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("backToTopBtn").style.display = "block";
-    } else {
-        document.getElementById("backToTopBtn").style.display = "none";
-    }
-}
-
-function scrollToTop() {
-    const scrollToTopBtn = document.documentElement || document.body;
-    scrollToTopBtn.scrollIntoView({
-        behavior: "smooth"
-    });
-}
-// ============= button back to top end ============= //
+// ============= boton flotante de WhatsApp: enlace estatico, sin logica JS ============= //
 
 
 // ============= logoipsum slider section ============= //
